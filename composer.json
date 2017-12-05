@@ -1,18 +1,31 @@
 {
     "name": "/",
     "description": "",
-    "keywords": [
-        "swagger",
-        "php",
-        "sdk",
-        "api"
-    ],
     "homepage": "http://swagger.io",
     "license": "proprietary",
     "authors": [
         {
             "name": "Swagger and contributors",
             "homepage": "https://github.com/swagger-api/swagger-codegen"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "wouteradem/reservoir_subs",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/wouteradem/reservoir_subs.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-4" : {
+                        "Swagger\\Client\\" : "lib/"
+                    }
+                }
+            }
         }
     ],
     "require": {
